@@ -1,0 +1,25 @@
+---
+- name: Create ec2 instance
+  hosts: localhost
+  gather_facts: no
+  
+  
+  tasks:
+    - name: create an ec2 instance
+      community.aws.ec2_instance:
+        name: "myinstance"
+        region: "us-east-1"
+        instance_type: "t2.micro"
+        key_name: "ansibleKey"
+        security_groups: "sg-063a9f770e7568323"
+        image_id: "ami-04a81a99f5ec58529"
+        wait: yes
+        count: 1
+      register: ec2
+      environment:
+        aws_access_key_id: "your_key_id"
+        aws_secret_access_key: "your_key"
+
+    - name: print instance info
+      debug: 
+        var: ec2.instances
