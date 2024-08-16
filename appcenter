@@ -1,0 +1,12 @@
+mrunmayee-solkar@mrunmayee-solkar-VirtualBox:~/Desktop/appcenter$ sudo appcenter login
+
+App Center CLI would like to collect data about how users use CLI commands and some problems they encounter.
+Participation is voluntary and when you choose to participate your device automatically sends information to
+Microsoft about how you use App Center CLI.
+For more information, please see our privacy policy at https://aka.ms/mobilecenterprivacy
+
+? Enable telemetry?  Yes
+Opening your browser... 
+? Visit https://appcenter.ms/cli-login?hostname=mrunmayee-solkar-VirtualBox and enter the code:
+? Access code from browser:  c46dcf16af0700200578da63108730ba859cb891
+Error: self-signed certificate in certificate chain
